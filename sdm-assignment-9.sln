@@ -3,17 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sdm.assignment9", "sdm.assignment9\sdm.assignment9.csproj", "{43B3505D-1B25-49C4-9769-D38039123B3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sdm.assignment9", "sdm.assignment9\sdm.assignment9.csproj", "{43B3505D-1B25-49C4-9769-D38039123B3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sdm.assignment9.Core.ApplicationService", "sdm.assignment9.Core.ApplicationService\sdm.assignment9.Core.ApplicationService.csproj", "{CEB46410-ABC5-4326-8813-93D6B7DA9E99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sdm.assignment9.Core.ApplicationService", "sdm.assignment9.Core.ApplicationService\sdm.assignment9.Core.ApplicationService.csproj", "{CEB46410-ABC5-4326-8813-93D6B7DA9E99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sdm.assignment9.Core.Entity", "sdm.assignment9.Core.Entity\sdm.assignment9.Core.Entity.csproj", "{B3E65360-1722-456B-B26C-16A57A3630F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sdm.assignment9.Core.Entity", "sdm.assignment9.Core.Entity\sdm.assignment9.Core.Entity.csproj", "{B3E65360-1722-456B-B26C-16A57A3630F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sdm.assignment9.Core.DomainService", "sdm.assignment9.Core.DomainService\sdm.assignment9.Core.DomainService.csproj", "{D99A9F9F-C94B-4C88-B49D-29ABC3A6EC27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sdm.assignment9.Core.DomainService", "sdm.assignment9.Core.DomainService\sdm.assignment9.Core.DomainService.csproj", "{D99A9F9F-C94B-4C88-B49D-29ABC3A6EC27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sdm.assignment9.Core.ApplicationService.Implementation", "sdm.assignment9.Core.ApplicationService.Implementation\sdm.assignment9.Core.ApplicationService.Implementation.csproj", "{7DA3FE51-8625-466F-A585-C1BAA568E9F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sdm.assignment9.Core.ApplicationService.Implementation", "sdm.assignment9.Core.ApplicationService.Implementation\sdm.assignment9.Core.ApplicationService.Implementation.csproj", "{7DA3FE51-8625-466F-A585-C1BAA568E9F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sdm.assignment9.Infrastructure", "sdm.assignment9.Infrastructure\sdm.assignment9.Infrastructure.csproj", "{83C29A39-31FB-4488-8EA3-C7F159E11F4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sdm.assignment9.Infrastructure", "sdm.assignment9.Infrastructure\sdm.assignment9.Infrastructure.csproj", "{83C29A39-31FB-4488-8EA3-C7F159E11F4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7B14CB82-2297-4A07-BA3C-64C15FE804BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{2A3A7D8D-7F28-4235-88E8-583A5D32CE4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{95293FA3-0C87-488B-BB86-0D458BBC949B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationService", "ApplicationService", "{49A900B4-4726-4F93-A7F1-866C1ADDA5EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +56,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43B3505D-1B25-49C4-9769-D38039123B3D} = {2A3A7D8D-7F28-4235-88E8-583A5D32CE4C}
+		{CEB46410-ABC5-4326-8813-93D6B7DA9E99} = {49A900B4-4726-4F93-A7F1-866C1ADDA5EF}
+		{B3E65360-1722-456B-B26C-16A57A3630F6} = {7B14CB82-2297-4A07-BA3C-64C15FE804BE}
+		{D99A9F9F-C94B-4C88-B49D-29ABC3A6EC27} = {7B14CB82-2297-4A07-BA3C-64C15FE804BE}
+		{7DA3FE51-8625-466F-A585-C1BAA568E9F5} = {49A900B4-4726-4F93-A7F1-866C1ADDA5EF}
+		{83C29A39-31FB-4488-8EA3-C7F159E11F4B} = {95293FA3-0C87-488B-BB86-0D458BBC949B}
+		{49A900B4-4726-4F93-A7F1-866C1ADDA5EF} = {7B14CB82-2297-4A07-BA3C-64C15FE804BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {31545908-EB15-464B-948C-847DE2A5C00E}
